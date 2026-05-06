@@ -1,12 +1,11 @@
 // LOGIN
 function login(){
-let u=document.getElementById("username")?.value.trim();
-let p=document.getElementById("password")?.value.trim();
+let p=document.getElementById("password").value;
 
-if(u==="admin" && p==="1234"){
+if(p==="shopysta"){
 window.location.href="home.html";
 }else{
-document.getElementById("error").innerText="Username / Password salah";
+document.getElementById("error").innerText="Password salah";
 }
 }
 
@@ -23,5 +22,5 @@ return;
 }
 
 document.getElementById("hasil").innerText=
-"Data diterima: "+nama+" ("+email+")";
+"Pesan terkirim oleh "+nama+" ("+email+")";
 }
