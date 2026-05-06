@@ -1,0 +1,67 @@
+body{
+margin:0;
+font-family:'Poppins', sans-serif;
+}
+
+.bg-vintage{
+background:#f5e6d3;
+color:#3e2f1c;
+}
+
+/* NAVBAR */
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:15px;
+background:#d2b48c;
+}
+
+.navbar a{
+margin:10px;
+text-decoration:none;
+color:#3e2f1c;
+font-weight:bold;
+}
+
+/* CONTAINER */
+.container{
+padding:40px;
+text-align:center;
+}
+
+/* LOGIN */
+.login-box{
+width:300px;
+margin:120px auto;
+padding:20px;
+background:#fff3e0;
+border-radius:10px;
+text-align:center;
+}
+
+/* INPUT */
+input{
+padding:10px;
+width:80%;
+border-radius:5px;
+border:1px solid #ccc;
+}
+
+/* BUTTON */
+button{
+padding:10px 20px;
+background:#a47148;
+color:white;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+/* PRODUK */
+.product{
+background:#fff;
+margin:10px auto;
+padding:15px;
+width:250px;
+border-radius:10px;
+}
