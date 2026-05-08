@@ -18,22 +18,13 @@ window.location.href="index.html";
 
 }
 
-// FORM KONTAK
-function kirim(e){
+// BOOKING
+function booking(gunung){
 
-e.preventDefault();
+let pesan="Halo, saya ingin booking tiket pendakian "+gunung;
 
-let nama=document.getElementById("nama").value;
-let email=document.getElementById("email").value;
-
-if(nama==="" || email===""){
-
-document.getElementById("hasil").innerText="Isi semua data terlebih dahulu";
-return;
-
-}
-
-document.getElementById("hasil").innerText=
-"Pesan berhasil dikirim oleh "+nama+" ("+email+")";
+window.open(
+"https://wa.me/6285708829924?text="+encodeURIComponent(pesan)
+);
 
 }
