@@ -1,26 +1,32 @@
 // LOGIN
 function login(){
-let p=document.getElementById("password").value;
 
-if(p==="shopysta"){
+let password=document.getElementById("password").value;
+
+if(password==="shopysta"){
 window.location.href="home.html";
 }else{
 document.getElementById("error").innerText="Password salah";
 }
+
 }
 
-// KONTAK
+// FORM KONTAK
 function kirim(e){
+
 e.preventDefault();
 
 let nama=document.getElementById("nama").value;
 let email=document.getElementById("email").value;
 
 if(nama==="" || email===""){
-document.getElementById("hasil").innerText="Isi semua data dulu";
+
+document.getElementById("hasil").innerText="Isi semua data terlebih dahulu";
 return;
+
 }
 
 document.getElementById("hasil").innerText=
-"Pesan terkirim oleh "+nama+" ("+email+")";
+"Pesan berhasil dikirim oleh "+nama+" ("+email+")";
+
 }
