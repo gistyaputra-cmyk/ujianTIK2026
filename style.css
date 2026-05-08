@@ -9,6 +9,38 @@ color:#333;
 background:#fafafa;
 }
 
+/* LOGIN BACKGROUND */
+.login-page{
+background:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop');
+background-size:cover;
+background-position:center;
+height:100vh;
+}
+
+.overlay{
+width:100%;
+height:100vh;
+background:rgba(0,0,0,0.5);
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* LOGIN */
+.login-box{
+width:320px;
+padding:30px;
+background:white;
+border-radius:12px;
+box-shadow:0 2px 15px rgba(0,0,0,0.2);
+text-align:center;
+}
+
+.login-logo{
+width:80px;
+margin-bottom:10px;
+}
+
 /* NAVBAR */
 .navbar{
 display:flex;
@@ -22,12 +54,24 @@ top:0;
 z-index:100;
 }
 
-.navbar h2{
-margin:0;
+.nav-left{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo{
+width:45px;
+height:45px;
+}
+
+.nav-menu{
+display:flex;
+align-items:center;
+gap:20px;
 }
 
 .navbar a{
-margin:10px;
 text-decoration:none;
 color:#333;
 font-weight:500;
@@ -36,6 +80,20 @@ transition:0.3s;
 
 .navbar a:hover{
 color:#777;
+}
+
+/* LOGOUT */
+.logout-btn{
+background:#222;
+color:white;
+padding:10px 18px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+.logout-btn:hover{
+background:#444;
 }
 
 /* HERO */
@@ -83,17 +141,6 @@ padding:40px;
 line-height:1.9;
 text-align:justify;
 margin-bottom:20px;
-}
-
-/* LOGIN */
-.login-box{
-width:320px;
-margin:120px auto;
-padding:30px;
-background:white;
-border-radius:12px;
-box-shadow:0 2px 15px rgba(0,0,0,0.1);
-text-align:center;
 }
 
 /* INPUT */
@@ -167,6 +214,12 @@ font-weight:bold;
 .navbar{
 flex-direction:column;
 text-align:center;
+}
+
+.nav-menu{
+margin:15px 0;
+flex-wrap:wrap;
+justify-content:center;
 }
 
 .hero-text h1{
