@@ -3,11 +3,18 @@ function login(){
 
 let password=document.getElementById("password").value;
 
-if(password==="shopysta"){
+if(password==="smadw"){
 window.location.href="home.html";
 }else{
 document.getElementById("error").innerText="Password salah";
 }
+
+}
+
+// LOGOUT
+function logout(){
+
+window.location.href="index.html";
 
 }
 
