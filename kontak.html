@@ -4,10 +4,12 @@
 <title>Kontak - SHOPYSTA</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body class="bg-writee">
 
 <div class="navbar">
 <h2>SHOPYSTA</h2>
+
 <div>
 <a href="home.html">Home</a>
 <a href="about.html">About</a>
@@ -16,20 +18,32 @@
 </div>
 </div>
 
-<div class="container">
+<!-- HERO -->
+<div class="hero">
+<img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=1200&auto=format&fit=crop">
 
-<img src="https://picsum.photos/700/250" class="banner">
+<div class="hero-text">
+<h1>Contact Us</h1>
+<p>Kami siap membantu kebutuhan digitalmu</p>
+</div>
+</div>
+
+<div class="container">
 
 <h2>Hubungi Kami</h2>
 
 <p class="long-text">
-Silakan hubungi kami untuk pertanyaan, kerja sama, atau informasi lebih lanjut mengenai produk digital yang tersedia di SHOPYSTA.
+Jika memiliki pertanyaan, kritik, saran, atau ingin bekerja sama, silakan hubungi kami melalui form berikut. Tim SHOPYSTA akan berusaha memberikan respon terbaik secepat mungkin.
 </p>
 
 <form onsubmit="kirim(event)">
-<input id="nama" placeholder="Nama"><br><br>
-<input id="email" placeholder="Email"><br><br>
+
+<input id="nama" placeholder="Masukkan Nama"><br><br>
+
+<input id="email" placeholder="Masukkan Email"><br><br>
+
 <button type="submit">Kirim</button>
+
 </form>
 
 <p id="hasil"></p>
@@ -37,5 +51,6 @@ Silakan hubungi kami untuk pertanyaan, kerja sama, atau informasi lebih lanjut m
 </div>
 
 <script src="script.js"></script>
+
 </body>
 </html>
